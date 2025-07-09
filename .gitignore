@@ -1,0 +1,54 @@
+# -----------------------------------
+# 🚀 React + Vite (frontend)
+# -----------------------------------
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# -----------------------------------
+# 🐍 Python / Django
+# -----------------------------------
+*.pyc
+__pycache__/
+*.log
+db.sqlite3
+*.sqlite3
+.env
+.env.*
+.envrc
+
+# Django static + media
+staticfiles/
+media/
+
+# Virtual environment
+env/            
+# -----------------------------------
+# 🛠 Logs & Debug Files
+# -----------------------------------
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# -----------------------------------
+# 💻 Editor / OS
+# -----------------------------------
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# -----------------------------------
+# 🔁 Git Merge Backup Files
+# -----------------------------------
+*.orig
+*.bak
