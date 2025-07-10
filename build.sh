@@ -9,6 +9,9 @@ cd ..
 echo "📦 Collecting static files"
 python manage.py collectstatic --noinput
 
+echo "🛠️ Applying database migrations..."
+python manage.py migrate
+
 echo "👑 Creating superuser (if not exists)"
 python manage.py shell << END
 from django.contrib.auth import get_user_model
