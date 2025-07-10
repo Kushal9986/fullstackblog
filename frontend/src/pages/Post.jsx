@@ -16,7 +16,7 @@ function Post() {
     console.log("isauthor:::",isAuthor)
 
      const deletePost = async() => {
-        await fetch(`http://localhost:8000/api/deletarticles/${id}`,{
+        await fetch(`http://fullstackblog-ff5v.onrender.com/api/deletarticles/${id}`,{
             method:"DELETE",
             headers:{
                 "X-CSRFToken": getCookie("csrftoken"),
@@ -38,7 +38,7 @@ function Post() {
     if (id){
         console.log("id:",id)
         console.log("type of id ::",typeof(id))
-        fetch(`http://localhost:8000/api/getarticlebyid/${id}`)
+        fetch(`http://fullstackblog-ff5v.onrender.com/api/getarticlebyid/${id}`)
         .then((response)=>{
             console.log("fetcharticlebyid response::",response)
             if(response.ok){

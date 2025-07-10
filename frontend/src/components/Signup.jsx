@@ -22,7 +22,7 @@ function Signup() {
     const create = async(formdata) => {
         setError("")
         try {
-            await fetch("http://localhost:8000/api/createuser/", {
+            await fetch("http://fullstackblog-ff5v.onrender.com/api/createuser/", {
 
                 method: 'POST',
                 headers: {
@@ -51,7 +51,7 @@ function Signup() {
             .then(async(userData) => {
                     if (userData) {
 
-                        await fetch("http://localhost:8000/api/login/", {
+                        await fetch("http://fullstackblog-ff5v.onrender.com/api/login/", {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'

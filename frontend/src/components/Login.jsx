@@ -23,7 +23,7 @@ function Login() {
     const Login = async (formdata) => {
         setError("")
         try {
-            await fetch('http://localhost:8000/api/login/', {
+            await fetch('http://fullstackblog-ff5v.onrender.com/api/login/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

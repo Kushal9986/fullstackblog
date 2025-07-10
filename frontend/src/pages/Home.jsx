@@ -24,7 +24,7 @@ const status = useSelector((state)=>state.auth.status)
 // console.log("logged in userdata::" ,userdata)
  
     useEffect(()=>{
-        fetch("http://localhost:8000/api/getallarticles/")
+        fetch("http://fullstackblog-ff5v.onrender.com/api/getallarticles/")
         .then((response)=>{
             // console.log("Post,response",resnponse)
             if (!response.ok) {

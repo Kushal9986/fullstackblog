@@ -50,7 +50,7 @@ export default function PostForm({ post }) {
             //     console.log("data::imgae afte::",data.image)
             // }
             // console.log("data::",data)
-            fetch(`http://localhost:8000/api/updatearticles/${post.id}`,
+            fetch(`http://fullstackblog-ff5v.onrender.com/api/updatearticles/${post.id}`,
                 {
                     method: "PATCH",
                     headers:{
@@ -85,7 +85,7 @@ export default function PostForm({ post }) {
             //     console.log(`${key}:`, value);
             // }
 
-            fetch("http://localhost:8000/api/createarticles/", {
+            fetch("http://fullstackblog-ff5v.onrender.com/api/createarticles/", {
                 method: "POST",
                 headers:{
                     "X-CSRFToken": getCookie("csrftoken"),
