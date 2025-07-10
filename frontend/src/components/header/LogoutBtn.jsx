@@ -9,7 +9,7 @@ function LogoutBtn() {
     const authstatus = useSelector((state)=>state.auth.status)
     const navigate = useNavigate()
     const logoutHandler = async()=>{
-        await fetch("http://fullstackblog-ff5v.onrender.com/api/logout/",{
+        await fetch("https://fullstackblog-ff5v.onrender.com/api/logout/",{
             method:"POST",
             credentials:"include",
             headers: {

@@ -17,7 +17,7 @@ function Mypost() {
     let Mypost = []
 
     useEffect(() => {
-        fetch("http://fullstackblog-ff5v.onrender.com/api/getallarticles/")
+        fetch("https://fullstackblog-ff5v.onrender.com/api/getallarticles/")
             .then((resnponse) => {
                 // console.log("Post,response",resnponse)
                 return resnponse.json()

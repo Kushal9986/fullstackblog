@@ -11,7 +11,7 @@ function App() {
   const dispatch = useDispatch()
 useEffect(() => {
     (async function fetch_session() {
-      await fetch("http://localhost:8000/api/protected-view/", {
+      await fetch("https://fullstackblog-ff5v.onrender.com/api/protected-view/", {
         method: "GET",
         credentials: "include"
       })

@@ -12,7 +12,7 @@ function Editpost() {
 
     useEffect(()=>{
         if (id) {
-            fetch(`http://fullstackblog-ff5v.onrender.com/api/getarticlebyid/${id}`)
+            fetch(`https://fullstackblog-ff5v.onrender.com/api/getarticlebyid/${id}`)
             .then((response)=>{
                 if(response.ok){
                     console.log("response::getbyid editpost:",response)
