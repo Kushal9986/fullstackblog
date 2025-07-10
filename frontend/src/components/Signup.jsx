@@ -54,7 +54,8 @@ function Signup() {
                         await fetch("https://fullstackblog-ff5v.onrender.com/api/login/", {
                             method: 'POST',
                             headers: {
-                                'Content-Type': 'application/json'
+                                'Content-Type': 'application/json',
+                                "X-CSRFToken": getCookie("csrftoken"),
                             },
                             credentials: 'include', // ⬅ important: stores Django session
                             body: JSON.stringify(userData)
