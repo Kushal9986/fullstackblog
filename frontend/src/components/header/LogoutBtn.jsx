@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {logout} from "../../store/authslice"
 import { useNavigate } from 'react-router-dom'
+import { getCookie } from '../../utils/csrf'
 
 
 function LogoutBtn() {
@@ -13,7 +14,9 @@ function LogoutBtn() {
             method:"POST",
             credentials:"include",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "X-CSRFToken": getCookie("csrftoken"),
+                
             }
         }).then((response)=>{
             console.log("logout response::",response)
